@@ -1,0 +1,45 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="579.992" Width="480.657" ResizeMode="NoResize">
+    <Grid Margin="0,0,2,-4">
+        <Grid.Background>
+            <ImageBrush ImageSource="Darling-In-The-Franxx-Anime-Zero-Two-(Darling-in-the-Franxx)-homuntan-4373278.jpeg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="223*"/>
+            <ColumnDefinition Width="38*"/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="tablo" HorizontalAlignment="Left" Height="47" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Margin="10,10,0,0" FontSize="36" TextAlignment="Right" Grid.ColumnSpan="2"/>
+        <Button x:Name="one" Content="1" HorizontalAlignment="Left" Margin="37,86,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="one_Click"/>
+        <Button x:Name="two" Content="2" HorizontalAlignment="Left" Margin="139,86,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="two_Click"/>
+        <Button x:Name="three" Content="3" HorizontalAlignment="Left" Margin="245,86,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="three_Click"/>
+        <Button x:Name="clear" Content="C" HorizontalAlignment="Left" Margin="349,86,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="clear_Click"/>
+        <Button x:Name="four" Content="4" HorizontalAlignment="Left" Margin="37,180,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="four_Click"/>
+        <Button x:Name="seven" Content="7" HorizontalAlignment="Left" Margin="37,263,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="seven_Click"/>
+        <Button x:Name="five" Content="5" HorizontalAlignment="Left" Margin="139,180,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="five_Click"/>
+        <Button x:Name="six" Content="6" HorizontalAlignment="Left" Margin="245,180,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="six_Click"/>
+        <Button x:Name="plus" Content="+" HorizontalAlignment="Left" Margin="349,263,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="plus_Click"/>
+        <Button x:Name="eight" Content="8" HorizontalAlignment="Left" Margin="139,263,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" AutomationProperties.IsRequiredForForm="True" Click="eight_Click"/>
+        <Button x:Name="nine" Content="9" HorizontalAlignment="Left" Margin="245,263,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="nine_Click"/>
+        <Button x:Name="min" Content="-" HorizontalAlignment="Left" Margin="349,348,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="min_Click"/>
+        <Button x:Name="zero" Content="0" HorizontalAlignment="Left" Margin="37,348,0,0" VerticalAlignment="Top" Width="51" Height="52" FontSize="36" Click="zero_Click"/>
+        <Button x:Name="del" Content="/" HorizontalAlignment="Left" Margin="139,348,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="del_Click"/>
+        <Button x:Name="umn" Content="*" HorizontalAlignment="Left" Margin="245,348,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="umn_Click"/>
+        <Button x:Name="res" Content="=" HorizontalAlignment="Left" Margin="245,433,0,0" VerticalAlignment="Top" Width="155" Height="51" FontSize="36" Click="res_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="580244454b324157c8daaebc.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="Znak" Content="+/-" HorizontalAlignment="Left" Margin="37,433,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="30" Click="Znak_Click"/>
+        <Label x:Name="Label1" Content="" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="47" Width="384" FontSize="35"/>
+        <Button x:Name="lust" Content="&lt;-" HorizontalAlignment="Left" Margin="349,180,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="30" Click="lust_Click"/>
+        <Button Content="." HorizontalAlignment="Left" Margin="139,433,0,0" VerticalAlignment="Top" Width="51" Height="51" FontSize="36" Click="Button_Click"/>
+
+    </Grid>
+</Window>
